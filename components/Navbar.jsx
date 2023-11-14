@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import { useRouter } from 'next/router';
-import NavLogo from '../public/assets/navLogo.png'
+import NavLogo from '../public/assets/navLogo.svg'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -56,12 +56,13 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <a>
+          <a className=' mt-8'>
             <Image
+        
               src={NavLogo}
               alt='/'
               width='125'
-              height='50'
+              height='125'
               className='cursor-pointer'
             />
           </a>
@@ -132,11 +133,11 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
+            {/* <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
                 Let&#39;s build something legendary together
               </p>
-            </div>
+            </div> */}
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
@@ -173,7 +174,7 @@ const Navbar = () => {
             </ul>
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let&#39;s Connect
+                Let's Connect
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
